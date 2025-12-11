@@ -1,0 +1,1 @@
+Add profile image at images/profile.jpg and update index.html if needed.

@@ -1,0 +1,54 @@
+
+:root{--bg:#fbfbfc;--card:#fff;--text:#0f172a;--muted:#6b7280;--accent:#0b74ff;--maxw:980px}
+*{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;margin:0;color:var(--text);background:var(--bg);line-height:1.55}
+.wrap{max-width:var(--maxw);margin:24px auto;padding:0 18px}
+.header{background:linear-gradient(180deg,#fff,#f7fbff);padding:28px 0;border-bottom:1px solid #eef2ff}
+.header h1{margin:0;font-size:28px}
+.headline{color:var(--muted);margin:6px 0 0}
+.meta{color:var(--muted);margin:8px 0}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04);margin-bottom:18px}
+.company h3{margin:0 0 6px}
+.dates{color:var(--muted);font-weight:600;margin-left:8px;font-size:13px}
+.footer{padding:18px 0;text-align:center;color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+@media(min-width:900px){.wrap{padding:0}}
+
+
+/* Hero layout */
+.hero{display:flex;gap:18px;align-items:center}
+.profile{width:120px;height:120px;border-radius:14px;object-fit:cover;box-shadow:0 10px 30px rgba(2,6,23,0.12);border:4px solid white}
+.hero-text{flex:1}
+.hero-name{margin:0;font-size:26px}
+.hero-role{color:var(--muted);margin:6px 0 8px}
+.badges{margin-top:8px}
+.badge{display:inline-block;background:#eef6ff;color:#0b4fd6;padding:6px 10px;border-radius:999px;margin-right:8px;font-weight:700;font-size:13px}
+
+/* Technical metrics */
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+.metric{background:linear-gradient(180deg,#fff,#fbfdff);padding:12px;border-radius:10px;border:1px solid #eff6ff;box-shadow:0 6px 18px rgba(2,6,23,0.03);text-align:center}
+.metric-value{font-size:20px;font-weight:800;color:var(--accent)}
+.metric-label{color:var(--muted);font-size:13px}
+
+/* code block */
+.code-block{background:#0b1220;color:#e6f0ff;padding:12px;border-radius:8px;overflow:auto;font-family:monospace;font-size:13px;border:1px solid rgba(255,255,255,0.03);margin-top:12px}
+
+
+/* Skills grid */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.skill{padding:10px;border-radius:10px;border:1px solid #eef2ff;background:linear-gradient(180deg,#fff,#fbfdff);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.skill-name{font-weight:700}
+.skill-rating .star{cursor:pointer;font-size:20px;margin-right:4px;opacity:0.6}
+.skill-rating .star.active{color:gold;opacity:1}
+.skill-score{min-width:40px;text-align:center;font-weight:800;color:var(--accent)}
+
+/* Reviews */
+.reviews form{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.reviews input, .reviews textarea{padding:8px;border:1px solid #e6e6e6;border-radius:8px;font-family:inherit}
+.reviews button{align-self:flex-start;padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:700;cursor:pointer}
+
+/* Certificates */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.cert{padding:12px;border-radius:10px;border:1px solid #eef2ff;background:#fff}
+.cert-title{font-weight:700;margin-bottom:8px}
+.cert-actions a{font-weight:700;color:var(--accent);text-decoration:none}
+.muted{color:var(--muted);font-size:13px;margin-top:8px}
